@@ -1,6 +1,4 @@
-# Omnifood_Project
-
-First project, done by following Jonas Schmedtmann HTML and CSS course on Udemy.
+# Omnifood
 
 ## About Omnifood
 
