@@ -108,6 +108,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
@@ -153,22 +157,27 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  color: white;
+
   text-decoration: none;
   border-radius: 9px;
   padding: 1.6rem 3.2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
 .btn--full:visited {
   background-color: #e67e22;
+  color: #fff;
 }
 
 .btn--full:hover,
@@ -187,6 +196,18 @@ body {
   background-color: #fdf2e9;
   /*border: 3px solid white;*/
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -220,6 +241,11 @@ body {
 .list-icon {
   color: #e67e22;
   font-size: 3.2rem;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(231, 126, 35, 0.5);
 }
 
 .margin-bottom-md {
