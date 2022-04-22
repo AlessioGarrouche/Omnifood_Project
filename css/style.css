@@ -11,6 +11,7 @@
   /* Because we want to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
@@ -22,15 +23,15 @@
 /**********************/
 
 .main-nav-list {
-  display: inline-block;
   display: flex;
   align-items: center;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
 .main-nav-link:visited {
+  display: inline-block;
   text-decoration: none;
   color: #333;
   font-weight: 500;
@@ -54,6 +55,43 @@
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
 }
 
 /**********************/
@@ -134,7 +172,6 @@
   font-weight: 500;
   text-align: center;
   margin-bottom: 2.4rem;
-  color: #888;
 }
 
 .logos {
@@ -160,7 +197,12 @@
   font-size: 8.6rem;
   font-weight: 600;
   color: #ddd;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 .step-img-box {
@@ -179,6 +221,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  border-radius: 50%;
 }
 
 .step-img-box::before {
@@ -224,6 +268,10 @@
 .meals:hover {
   transform: translateY(-1.2rem);
   box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meals-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
 .meal-tags {
@@ -293,6 +341,10 @@
 .list {
   display: flex;
   flex-direction: column;
+}
+
+.meal-img {
+  width: 100%;
 }
 
 .all-recipes {
@@ -370,7 +422,7 @@
 }
 
 .pricing-plan {
-  border-radius: 12px;
+  border-radius: 11px;
   width: 75%;
 }
 
@@ -388,7 +440,7 @@
 }
 
 .pricing-plan--complete::after {
-  content: "best-value";
+  content: "Best value";
   position: absolute;
   top: 6%;
   right: -18%;
@@ -429,7 +481,7 @@
 }
 
 .plan-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.6;
   color: #6f6f6f;
 }
@@ -486,13 +538,19 @@
   /* temporary */
 }
 
-.cta-text {
+.cta-text-box {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
   color: #45260a;
 }
 .cta .heading-secondary {
   color: inherit;
   margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img {
@@ -544,7 +602,7 @@
 
 .cta *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgb(253, 242, 233, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
 /**********************/
@@ -591,7 +649,7 @@
 .footer-heading {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-bottom: 3.2rem;
+  margin-bottom: 4rem;
 }
 
 .contacts {

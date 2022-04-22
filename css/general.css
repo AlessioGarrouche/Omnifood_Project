@@ -142,11 +142,6 @@ body {
   line-height: 1.2;
 }
 
-.step-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
-}
-
 .subheading {
   display: block;
   color: #cf711f;
@@ -165,7 +160,7 @@ body {
   text-decoration: none;
   border-radius: 9px;
   padding: 1.6rem 3.2rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
 
   transition: all 0.3s;
@@ -217,7 +212,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  transition: 0.3s;
+  transition: all 0.3s;
 }
 
 .link:hover,
@@ -229,6 +224,8 @@ body {
 .list {
   list-style: none;
   gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .list-item {
@@ -236,16 +233,18 @@ body {
   align-items: center;
   gap: 1.6rem;
   font-size: 1.8rem;
+  line-height: 1.2;
 }
 
 .list-icon {
   color: #e67e22;
-  font-size: 3.2rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 0.8rem rgb(231, 126, 35, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .margin-bottom-md {
@@ -254,4 +253,12 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
 }
